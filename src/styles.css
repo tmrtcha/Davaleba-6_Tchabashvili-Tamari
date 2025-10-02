@@ -1,0 +1,175 @@
+ @font-face {
+    font-family: 'Helvetica Neue LT GEO 45 Lights';
+    src: url('../fonts/HelveticaNeueLTGEO-45Lights.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTGEO-45Lights.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTGEO-45Lights.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT GEO 55 Roman';
+    src: url('../fonts/HelveticaNeueLTGEO-75Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTGEO-75Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTGEO-75Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+ * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	width: 100%;
+}
+
+button {
+	border: none;
+	padding: 18px 43px 18px 36px;
+}
+
+body {
+	padding-top: 80px; /* To prevent content from being hidden behind the fixed header */
+}
+
+header {
+	background-color: #0020F4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+header img {
+	width: 97px;
+}
+
+nav,
+nav li {
+	display: inline-block;
+	align-content: mid; /* This isn't a valid property for inline-block elements */
+}
+
+nav a {
+	color: #FFFFFF;
+	margin: auto; /* This won't have effect on inline or inline-block elements */
+}
+
+nav li,
+header a img {
+	margin: 20px;
+}
+
+.container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.images-section{
+    background-color: #0020F4;
+    padding-bottom: 60px;
+}
+
+.images-section{
+	display: flex;
+  	gap: 20px; /* space between images */
+}
+
+.img1{
+	width: 40%;
+	height: 40%;
+	/*height: auto;*/
+	margin-top: 280px;
+	margin-left: 50px;
+}
+
+.img2{
+  	width: 50%;
+	margin-top: 215px;
+}
+
+.cards{
+	display: flex;
+	gap: 30px;
+	align-content: mid;
+}
+
+.img3{
+	width: 50%;
+	margin-top: 215px;
+}
+
+.img4{
+	width: 50%;
+	margin-top: 315px;
+}
+
+div h1,
+div p{
+	margin: 30px;
+}
+
+div{
+	width: 40%;
+	margin-top: 80px;
+}
+
+.projects{
+	margin-top: 200px;
+}
+
+.parent img {
+	/*height: 400px;*/
+	/*object-fit: cover;*/
+}
+
+.parent {
+	position: relative;
+}
+
+.parent p {
+	position: absolute;
+	padding: 10px;
+	/* right: 0;
+	top: 0; */
+	background-color: rgba(255, 255, 255, 0.5);
+	fill-opacity: 40%;
+	/*padding: 10px;*/
+	/*top: 50%;*/
+	/*left: 50%;*/
+	bottom: 0;
+	/*transform: translate(-50%, -50%);*/
+}
+
+body{
+	margin-bottom: 150px;
+}
+
+h1{
+	font-family: 'Helvetica Neue LT GEO 55 Roman';
+}
+
+p{
+	font-family: 'Helvetica Neue LT GEO 45 Lights';
+}
